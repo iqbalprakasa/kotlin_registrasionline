@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgrounda">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Registrasi Online"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher_foreground" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtEmail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            android:scrollbarSize="10dp"
+
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:paddingLeft="18dp"
+                android:background="@drawable/background"
+                android:inputType="text"
+                android:textSize="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            >
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:paddingLeft="18dp"
+                android:background="@drawable/background"
+                android:inputType="textPassword"
+                android:textSize="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonmerah"
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonmerah"
+            android:text="@string/register" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
