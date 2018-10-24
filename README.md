@@ -1,2 +1,1 @@
-# kotlin_registrasionline
-# kotlin_registrasionline
+# Kotlin for beginner
